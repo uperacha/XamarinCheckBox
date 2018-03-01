@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CustomCheckBoxSample"
+             x:Class="CustomCheckBoxSample.MainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" 
+                         VerticalOptions="CenterAndExpand" 
+                         HorizontalOptions="CenterAndExpand">
+                
+                <Label Text="I want to be a millionaire" HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                <local:Checkbox EmptyImageSource="empty_checkbox.png" FilledImageSource="filled_checkbox.png" IsChecked="{Binding Checked}">
+                    <local:Checkbox.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding CheckedCommand}" NumberOfTapsRequired="1" />
+                    </local:Checkbox.GestureRecognizers>
+                </local:Checkbox>
+            
+            </StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
