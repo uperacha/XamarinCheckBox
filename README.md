@@ -1,2 +1,2 @@
 # XamarinCheckBox
-A cross platform Checkbox control for Xamarin Forms. It supports MVV and works on iOS &amp; Android.
+A cross platform Checkbox control for Xamarin Forms. It supports MVVM and works on iOS &amp; Android.
